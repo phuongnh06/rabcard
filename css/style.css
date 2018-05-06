@@ -1,0 +1,126 @@
+body {
+	margin-top: 2px;
+}
+
+.ib {
+	width: 50%;
+	display: inline-block;
+}
+
+.contain-image {
+	height: 949px;
+	width: 614px;
+	background: url('../images/rabiloo.png') center no-repeat;
+	position: relative;
+}
+
+.contain-image input[type=text]{
+	z-index: 2;
+}
+.contain-image input[type=text],.contain-image select {
+	position: absolute;
+	bottom: 244px;
+	left: 260px;
+	width: 354px;
+}
+
+.contain-image select {
+	bottom: 196px;
+}
+
+#image-container {
+	display: inline-block;
+	width: 334px;
+	height: 334px;
+	border: 1px solid #20a0db;
+	margin-left: 3px;
+	margin-top: 227px;
+	overflow: hidden;
+	cursor: move;
+}
+
+#drag-image {
+	left: 0;
+	pointer-events: none;
+	position: relative;
+	top: 0;
+	-moz-user-select: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search],
+.contain-image select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: none;
+	background: transparent;
+	font-size: 36pt;
+	font-family: Calibri;
+}
+
+.contain-image select * {
+	font-size: 20px;
+}
+
+input[type=text],
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+.contain-image select,
+.contain-image select:focus {
+	outline: none;
+	border-bottom: 1px dashed #ccc;
+	box-sizing: border-box;
+}
+
+input[type=file] {
+	position: absolute;
+	top: 220px;
+	right: -265px;
+	cursor: pointer;
+}
+
+.getLink {
+	position: absolute;
+    top: 295px;
+    right: -90px;
+    cursor: pointer;
+}
+
+#save {
+	position: absolute;
+	top: 329px;
+    right: -88px;
+	cursor: pointer;
+	background-color: #48aae0;
+	color: #fff;
+	border: 1px solid #48aae0;
+	padding: 4px;
+}
+
+.zoomin {
+	position: absolute;
+	top: 260px;
+	right: -36px;
+	width: 24px;
+    height: 21px;
+	cursor: pointer;
+}
+
+.zoomout {
+	position: absolute;
+    top: 260px;
+    right: -67px;
+    width: 24px;
+    height: 21px;
+	cursor: pointer;
+}

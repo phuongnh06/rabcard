@@ -67,8 +67,10 @@
 			},
 			loadUserImage(e) {
 				const file = e.target.files[0];
-				const imageUrl = URL.createObjectURL(file);
-				this.imageUrl = imageUrl;
+				if (file) {
+					const imageUrl = URL.createObjectURL(file);
+					this.imageUrl = imageUrl;
+				}
 			},
 			async setUserImage(img) {
 				const ctx = this.canvas.getContext("2d");
